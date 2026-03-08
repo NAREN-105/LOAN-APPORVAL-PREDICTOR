@@ -1,4 +1,5 @@
 ## LOAN-APPORVAL-PREDICTOR
+
 1.**Data generation** :   In this Project  it starts by generating a synthetic loan data uisng using **data/generate_data.py** file and also  crates a 5000 fake loan applicant with 21 different records like (Credit_score, loan_amount , employment_years , debt or income_ratio , education , loan purpose and more it will automatically detects whether the loan applicant or applier is approved for the loan or not based on the scoring formula 
 
 2.***Model trianing*** : Loads te generated dataset and trains **4 machines** learning models : Logistic Regression, Random Forest, XGBoost, and a Stacking Ensemble. Before training, the data is preprocessed — numerical features are scaled and categorical features are encoded. The Stacking Ensemble combines all 3 models (XGBoost + Random Forest + Gradient Boosting) and uses Logistic Regression as the final decision maker. After training, it saves the best model and also generates a confusion matrix and ROC curve chart.
