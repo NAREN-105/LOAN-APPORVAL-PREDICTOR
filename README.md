@@ -14,4 +14,3 @@
 
 5.***Testing*** : **tests/test_predictor.py** contains unit tests that verify the model loads correctly, predictions return the right format, probability is between 0 
 and 1, good applicants get approved and risky applicants get denied.
-
